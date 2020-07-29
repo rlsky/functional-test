@@ -3,6 +3,7 @@
     <h1>测试页</h1>
     <div class="skip">
       <button @click="toWaterfallFlow">瀑布流</button>
+      <button @click="toVant">Vant</button>
     </div>
   </div>
 </template>
@@ -16,6 +17,9 @@ export default {
   methods: {
     toWaterfallFlow() {
       this.$router.push("/waterfallFlow");
+    },
+    toVant() {
+      this.$router.push("/vant");
     },
   },
 };
