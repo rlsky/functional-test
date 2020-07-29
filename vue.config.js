@@ -9,6 +9,7 @@ module.exports = {
   devServer: {
     port: 4001,
     open: true,
+    proxy: "http://localhost:4001",
   },
   configureWebpack: {
     resolve: {

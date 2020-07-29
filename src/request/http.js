@@ -13,6 +13,11 @@ const toastscuess = () => {
   });
 };
 
+const toastfail = () => {
+  Toast({
+    message: "加载失败",
+  });
+};
 // 判断环境设置baseUrl
 if (process.env.NODE_ENV == "development") {
   instance.defaults.baseURL = "https://m.you.163.com";
@@ -31,7 +36,6 @@ instance.defaults.headers = {};
 // 请求拦截器
 instance.interceptors.request.use(
   (config) => {
-    toastscuess();
     return config;
   },
   (error) => {
@@ -44,8 +48,10 @@ instance.interceptors.response.use(
   (response) => {
     console.log(response);
     if (response.status === 200) {
+      toastscuess();
       return Promise.resolve(response);
     } else {
+      toastfail();
       return Promise.reject(response);
     }
   },
