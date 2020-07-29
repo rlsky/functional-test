@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import WaterfallFlow from "./moudle/waterfall-Flow";
 import Home from "./moudle/home";
 import Vant from "./moudle/vant";
+import Vuex from "./moudle/vuex";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -14,8 +15,17 @@ const router = new VueRouter({
     ...WaterfallFlow,
     ...Home,
     ...Vant,
+    ...Vuex,
   ],
   history,
+});
+
+router.beforeEach((to, from, next) => {
+  /* 路由发生变化修改页面title */
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  next();
 });
 
 export default router;

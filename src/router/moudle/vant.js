@@ -5,5 +5,8 @@ export default [
     path: "/vant",
     name: "vant",
     component: Vant,
+    meta: {
+      title: "Vant",
+    },
   },
 ];

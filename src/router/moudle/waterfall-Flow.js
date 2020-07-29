@@ -5,5 +5,8 @@ export default [
     path: "/waterfallFlow",
     name: "waterfallFlow",
     component: WaterfallFlow,
+    meta: {
+      title: "WaterfallFlow",
+    },
   },
 ];

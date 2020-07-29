@@ -4,6 +4,7 @@
     <div class="skip">
       <button @click="toWaterfallFlow">瀑布流</button>
       <button @click="toVant">Vant</button>
+      <button @click="toVuex">Vuex</button>
     </div>
   </div>
 </template>
@@ -20,6 +21,9 @@ export default {
     },
     toVant() {
       this.$router.push("/vant");
+    },
+    toVuex() {
+      this.$router.push("/vuex");
     },
   },
 };

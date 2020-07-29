@@ -1,15 +1,20 @@
 <template>
   <div id="vant">
-    vant
-    <van-button type="primary">主要按钮</van-button>
+    <goBack></goBack>
+    <div class="bottom">
+      <van-button type="primary">主要按钮</van-button>
+    </div>
   </div>
 </template>
 <script>
 import { Button } from "vant";
+import goBack from "components/goback";
+
 export default {
   name: "vant",
   components: {
     [Button.name]: Button,
+    goBack,
   },
   data() {
     return {};
@@ -28,4 +33,10 @@ export default {
   },
 };
 </script>
-<style></style>
+<style lang="scss" scoped>
+#vant {
+  .bottom {
+    margin-top: 38px;
+  }
+}
+</style>

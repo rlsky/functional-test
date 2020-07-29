@@ -38,7 +38,6 @@
 </template>
 <script>
 import goBack from "components/goback";
-import { waterfall } from "@/request/api";
 
 export default {
   name: "waterfall-Flow",
@@ -108,9 +107,13 @@ export default {
   },
   created() {},
   mounted() {
-    this.getwaterfallInfo();
+    this.gettotal();
   },
   methods: {
+    async gettotal() {
+      const result = await this.$http.index.getIndexData();
+      this.Total = result.data.data;
+    },
     scroll(scrollData) {
       let zongGaoDu = scrollData.scrollHeight + scrollData.scrollTop;
       this.flag++;
@@ -176,11 +179,6 @@ export default {
         ]);
       }
       this.flag = 0;
-    },
-    getwaterfallInfo() {
-      waterfall().then((res) => {
-        console.log(res);
-      });
     },
   },
   computed: {

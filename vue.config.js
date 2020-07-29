@@ -7,9 +7,24 @@ function resolve(dir) {
 module.exports = {
   outputDir: "dist",
   devServer: {
-    port: 4001,
+    port: 3001, //切换端口
     open: true,
-    proxy: "http://localhost:4001",
+    proxy: {
+      "/3002": {
+        target: "http://localhost:3002",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/3002": "",
+        },
+      },
+      "/3003": {
+        target: "https://m.you.163.com/xhr/search/searchAutoComplete.json",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/3003": "",
+        },
+      },
+    },
   },
   configureWebpack: {
     resolve: {
