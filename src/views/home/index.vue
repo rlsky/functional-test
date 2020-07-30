@@ -5,6 +5,7 @@
       <button @click="toWaterfallFlow">瀑布流</button>
       <button @click="toVant">Vant</button>
       <button @click="toVuex">Vuex</button>
+      <button @click="toCallKeyboard">call-Keyboard</button>
     </div>
   </div>
 </template>
@@ -24,6 +25,9 @@ export default {
     },
     toVuex() {
       this.$router.push("/vuex");
+    },
+    toCallKeyboard() {
+      this.$router.push("/callKeyboard");
     },
   },
 };

@@ -8,6 +8,7 @@ module.exports = {
   outputDir: "dist",
   devServer: {
     port: 3001, //切换端口
+    host: "192.168.43.30",
     open: true,
     proxy: {
       "/3002": {

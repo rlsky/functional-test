@@ -4,6 +4,7 @@ import WaterfallFlow from "./moudle/waterfall-Flow";
 import Home from "./moudle/home";
 import Vant from "./moudle/vant";
 import Vuex from "./moudle/vuex";
+import callKeyboard from "./moudle/call-Keyboard";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -16,6 +17,7 @@ const router = new VueRouter({
     ...Home,
     ...Vant,
     ...Vuex,
+    ...callKeyboard,
   ],
   history,
 });
