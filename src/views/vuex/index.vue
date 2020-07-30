@@ -23,6 +23,7 @@ export default {
     toCommit() {
       this.$store.dispatch("increment");
       console.log(this.$store.state.count);
+      sessionStorage.setItem("count", JSON.stringify(this.$store.state.count));
     },
   },
 };
