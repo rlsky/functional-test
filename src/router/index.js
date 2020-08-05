@@ -5,6 +5,7 @@ import Home from "./moudle/home";
 import Vant from "./moudle/vant";
 import Vuex from "./moudle/vuex";
 import callKeyboard from "./moudle/call-Keyboard";
+import nextTick from "./moudle/nextTick";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -18,6 +19,7 @@ const router = new VueRouter({
     ...Vant,
     ...Vuex,
     ...callKeyboard,
+    ...nextTick,
   ],
   history,
 });

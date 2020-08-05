@@ -6,6 +6,7 @@
       <button @click="toVant">Vant</button>
       <button @click="toVuex">Vuex</button>
       <button @click="toCallKeyboard">call-Keyboard</button>
+      <button @click="toNextTick">NextTick</button>
     </div>
   </div>
 </template>
@@ -28,6 +29,9 @@ export default {
     },
     toCallKeyboard() {
       this.$router.push("/callKeyboard");
+    },
+    toNextTick() {
+      this.$router.push("/nextTick");
     },
   },
 };
