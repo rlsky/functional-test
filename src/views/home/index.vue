@@ -8,6 +8,7 @@
       <button @click="toCallKeyboard">call-Keyboard</button>
       <button @click="toNextTick">NextTick</button>
       <button @click="toLyTab">ly-Tab</button>
+      <button @click="toCanvasPage">canvas-Page</button>
     </div>
   </div>
 </template>
@@ -36,6 +37,9 @@ export default {
     },
     toLyTab() {
       this.$router.push("/lyTab");
+    },
+    toCanvasPage() {
+      this.$router.push("/canvas-Page");
     },
   },
 };

@@ -24,6 +24,27 @@
       :change="selectChange()"
     >
     </ly-tab>
+    <div class="classify-Wrap">
+      <div class="classify" @scroll="scrollEvent">
+        <div
+          class="classify-Item"
+          v-for="(item, index) in classifyList"
+          :key="index"
+        >
+          <div class="classify-Img">
+            <img :src="item.imgUrl" alt="tu" />
+          </div>
+          <div class="classify-txt">
+            <span>{{ item.txt }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="classify-Line">
+        <div class="transition-Line-Wrap">
+          <div class="Line" ref="line"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -32,6 +53,15 @@ export default {
     this.isFirstIn();
   },
   methods: {
+    scrollEvent(e) {
+      console.log(e.target.scrollLeft);
+      let left = (e.target.scrollLeft / 275) * 90 + "px";
+      console.log(left);
+      this.$nextTick(() => {
+        // console.log(this.$refs.line);
+        this.$refs.line.style.left = left;
+      });
+    },
     // 首次进入页面,tabline的位置定位
     isFirstIn() {
       this.$refs.tabLine.style.width = `22.8px`;
@@ -80,6 +110,113 @@ export default {
       RelativeParentLeft: 0,
       isActive: 0,
       selectedId: 0,
+      classifyList: [
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+        {
+          imgUrl:
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
+          txt: "嘎嘎",
+        },
+      ],
       items: [
         { label: "首页" },
         { label: "推荐" },
@@ -152,6 +289,65 @@ export default {
           background: rgb(29, 152, 189);
           border-radius: 4px;
           transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .classify-Wrap {
+    height: 160px;
+    background: aqua;
+    padding: 6px 0;
+    position: relative;
+    .classify {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .classify-Item {
+        display: inline-block;
+        width: 50px;
+        height: 70px;
+        margin-right: 10px;
+        .classify-Img {
+          width: 50px;
+          height: 50px;
+          img {
+            height: 100%;
+            width: 70px;
+            display: block;
+            border-radius: 50%;
+          }
+        }
+        .classify-txt {
+          color: blue;
+          text-align: center;
+        }
+      }
+    }
+    .classify-Line {
+      position: absolute;
+      bottom: -20px;
+      background: chartreuse;
+      height: 20px;
+      width: 100%;
+      .transition-Line-Wrap {
+        height: 8px;
+        width: 100px;
+        background: chocolate;
+        border-radius: 6px;
+        position: relative;
+        .Line {
+          position: absolute;
+          left: 0;
+          height: 8px;
+          width: 20px;
+          background: red;
+          border-radius: 6px;
         }
       }
     }

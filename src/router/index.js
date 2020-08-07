@@ -7,6 +7,7 @@ import Vuex from "./moudle/vuex";
 import callKeyboard from "./moudle/call-Keyboard";
 import nextTick from "./moudle/nextTick";
 import lyTab from "./moudle/ly-Tab";
+import canvasPage from "./moudle/canvas-Page";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -22,6 +23,7 @@ const router = new VueRouter({
     ...callKeyboard,
     ...nextTick,
     ...lyTab,
+    ...canvasPage,
   ],
   history,
 });
