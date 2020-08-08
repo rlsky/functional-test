@@ -9,6 +9,8 @@
       <button @click="toNextTick">NextTick</button>
       <button @click="toLyTab">ly-Tab</button>
       <button @click="toCanvasPage">canvas-Page</button>
+      <button @click="toScrollOption">ScrollOption</button>
+      <button @click="toComponentMerge">ComponentMerge</button>
     </div>
   </div>
 </template>
@@ -40,6 +42,12 @@ export default {
     },
     toCanvasPage() {
       this.$router.push("/canvas-Page");
+    },
+    toScrollOption() {
+      this.$router.push("/scrollOption");
+    },
+    toComponentMerge() {
+      this.$router.push("/componentMerge");
     },
   },
 };

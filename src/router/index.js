@@ -8,6 +8,8 @@ import callKeyboard from "./moudle/call-Keyboard";
 import nextTick from "./moudle/nextTick";
 import lyTab from "./moudle/ly-Tab";
 import canvasPage from "./moudle/canvas-Page";
+import scrollOption from "./moudle/scroll-Option";
+import componentMerge from "./moudle/component-Merge";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -24,6 +26,8 @@ const router = new VueRouter({
     ...nextTick,
     ...lyTab,
     ...canvasPage,
+    ...scrollOption,
+    ...componentMerge,
   ],
   history,
 });
