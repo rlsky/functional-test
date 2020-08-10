@@ -10,6 +10,8 @@ import lyTab from "./moudle/ly-Tab";
 import canvasPage from "./moudle/canvas-Page";
 import scrollOption from "./moudle/scroll-Option";
 import componentMerge from "./moudle/component-Merge";
+import Loading from "./moudle/loading";
+import Abc from "./moudle/abc";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -28,6 +30,8 @@ const router = new VueRouter({
     ...canvasPage,
     ...scrollOption,
     ...componentMerge,
+    ...Loading,
+    ...Abc,
   ],
   history,
 });

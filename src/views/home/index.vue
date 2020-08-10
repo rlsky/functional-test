@@ -11,6 +11,8 @@
       <button @click="toCanvasPage">canvas-Page</button>
       <button @click="toScrollOption">ScrollOption</button>
       <button @click="toComponentMerge">ComponentMerge</button>
+      <button @click="toLoading">loading</button>
+      <button @click="toAbc">applyBindCall</button>
     </div>
   </div>
 </template>
@@ -48,6 +50,12 @@ export default {
     },
     toComponentMerge() {
       this.$router.push("/componentMerge");
+    },
+    toLoading() {
+      this.$router.push("/loading");
+    },
+    toAbc() {
+      this.$router.push("/abc");
     },
   },
 };
