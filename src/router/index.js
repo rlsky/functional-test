@@ -12,6 +12,7 @@ import scrollOption from "./moudle/scroll-Option";
 import componentMerge from "./moudle/component-Merge";
 import Loading from "./moudle/loading";
 import Abc from "./moudle/abc";
+import cityList from "./moudle/city-List";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -32,6 +33,7 @@ const router = new VueRouter({
     ...componentMerge,
     ...Loading,
     ...Abc,
+    ...cityList,
   ],
   history,
 });

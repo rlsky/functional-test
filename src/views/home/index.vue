@@ -13,6 +13,7 @@
       <button @click="toComponentMerge">ComponentMerge</button>
       <button @click="toLoading">loading</button>
       <button @click="toAbc">applyBindCall</button>
+      <button @click="toCityList">cityList</button>
     </div>
   </div>
 </template>
@@ -56,6 +57,9 @@ export default {
     },
     toAbc() {
       this.$router.push("/abc");
+    },
+    toCityList() {
+      this.$router.push("/cityList");
     },
   },
 };
