@@ -46,9 +46,11 @@
       </ul>
     </div>
     <!-- 置顶按钮 -->
-    <div class="toTop" v-show="isTop" @click="toPageTop">
-      <img src="./image/fanhuidingbu.png" />
-    </div>
+    <transition name="top">
+      <div class="toTop" v-if="isTop" @click="toPageTop">
+        <img src="./image/fanhuidingbu.png" />
+      </div>
+    </transition>
   </div>
 </template>
 <script>
@@ -76,7 +78,7 @@ export default {
   },
   methods: {
     async getCityInfo() {
-      const res = await this.$http.get("http://192.168.43.30:3001/api/lists");
+      const res = await this.$http.get("http://localhost:3001/api/lists");
       const { city, recommend } = res.data;
       this.hotCities = recommend[0].lists;
       this.cityList = city;
@@ -103,7 +105,7 @@ export default {
     },
     // 是否显示置顶按钮
     scrollToTop() {
-      if (document.documentElement.scrollTop > 636) {
+      if (document.documentElement.scrollTop > this.$refs.B[0].offsetTop) {
         this.isTop = true;
       } else {
         this.isTop = false;
@@ -240,6 +242,14 @@ export default {
         }
       }
     }
+  }
+  .top-enter-active,
+  .top-leave-active {
+    transition: opacity 0.5s;
+  }
+  .top-enter,
+  .top-leave-active {
+    opacity: 0;
   }
 }
 </style>

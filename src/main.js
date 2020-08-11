@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import axios from "axios";
 // import http from "@/http";
+import "lib-flexible";
 import waterfall from "vue-waterfall2";
 import store from "./vuex/index";
 import LyTab from "ly-tab";

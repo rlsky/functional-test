@@ -3,17 +3,21 @@
     <h1>测试页</h1>
     <div class="skip">
       <button @click="toWaterfallFlow">瀑布流</button>
-      <button @click="toVant">Vant</button>
-      <button @click="toVuex">Vuex</button>
-      <button @click="toCallKeyboard">call-Keyboard</button>
-      <button @click="toNextTick">NextTick</button>
-      <button @click="toLyTab">ly-Tab</button>
-      <button @click="toCanvasPage">canvas-Page</button>
-      <button @click="toScrollOption">ScrollOption</button>
-      <button @click="toComponentMerge">ComponentMerge</button>
-      <button @click="toLoading">loading</button>
-      <button @click="toAbc">applyBindCall</button>
-      <button @click="toCityList">cityList</button>
+      <button @click="toVant" title="Vant">Vant</button>
+      <button @click="toVuex" title="Vuex">Vuex</button>
+      <button @click="toCallKeyboard" title="call-Keyboard">
+        call-Keyboard
+      </button>
+      <button @click="toNextTick" title="NextTick">NextTick</button>
+      <button @click="toLyTab" title="ly-Tab">ly-Tab</button>
+      <button @click="toCanvasPage" title="canvas-Page">canvas-Page</button>
+      <button @click="toScrollOption" title="ScrollOption">ScrollOption</button>
+      <button @click="toComponentMerge" title="ComponentMerge">
+        ComponentMerge
+      </button>
+      <button @click="toLoading" title="loading">loading</button>
+      <button @click="toAbc" title="applyBindCall">applyBindCall</button>
+      <button @click="toCityList" title="cityList">cityList</button>
     </div>
   </div>
 </template>
@@ -68,7 +72,7 @@ export default {
 #home {
   position: relative;
   height: 100%;
-  background: seagreen;
+  background: url("./image/001.jpg");
   h1 {
     width: 100%;
     position: absolute;
@@ -87,6 +91,13 @@ export default {
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
+    button {
+      height: 20px;
+      width: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 }
 </style>
