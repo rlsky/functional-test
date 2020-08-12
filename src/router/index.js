@@ -13,6 +13,7 @@ import componentMerge from "./moudle/component-Merge";
 import Loading from "./moudle/loading";
 import Abc from "./moudle/abc";
 import cityList from "./moudle/city-List";
+import jsInterview from "./moudle/js-Interview";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -34,6 +35,7 @@ const router = new VueRouter({
     ...Loading,
     ...Abc,
     ...cityList,
+    ...jsInterview,
   ],
   history,
 });

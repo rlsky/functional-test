@@ -18,6 +18,7 @@
       <button @click="toLoading" title="loading">loading</button>
       <button @click="toAbc" title="applyBindCall">applyBindCall</button>
       <button @click="toCityList" title="cityList">cityList</button>
+      <button @click="toJsInterview" title="cityList">jsInterview</button>
     </div>
   </div>
 </template>
@@ -64,6 +65,9 @@ export default {
     },
     toCityList() {
       this.$router.push("/cityList");
+    },
+    toJsInterview() {
+      this.$router.push("/jsInterview");
     },
   },
 };
