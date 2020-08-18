@@ -19,64 +19,68 @@
       <button @click="toAbc" title="applyBindCall">applyBindCall</button>
       <button @click="toCityList" title="cityList">cityList</button>
       <button @click="toJsInterview" title="cityList">jsInterview</button>
+      <button @click="toswiperView" title="cityList">swiper-View</button>
     </div>
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {};
+    return {}
   },
   created() {},
   mounted() {},
   methods: {
     toWaterfallFlow() {
-      this.$router.push("/waterfallFlow");
+      this.$router.push('/waterfallFlow')
     },
     toVant() {
-      this.$router.push("/vant");
+      this.$router.push('/vant')
     },
     toVuex() {
-      this.$router.push("/vuex");
+      this.$router.push('/vuex')
     },
     toCallKeyboard() {
-      this.$router.push("/callKeyboard");
+      this.$router.push('/callKeyboard')
     },
     toNextTick() {
-      this.$router.push("/nextTick");
+      this.$router.push('/nextTick')
     },
     toLyTab() {
-      this.$router.push("/lyTab");
+      this.$router.push('/lyTab')
     },
     toCanvasPage() {
-      this.$router.push("/canvas-Page");
+      this.$router.push('/canvas-Page')
     },
     toScrollOption() {
-      this.$router.push("/scrollOption");
+      this.$router.push('/scrollOption')
     },
     toComponentMerge() {
-      this.$router.push("/componentMerge");
+      this.$router.push('/componentMerge')
     },
     toLoading() {
-      this.$router.push("/loading");
+      this.$router.push('/loading')
     },
     toAbc() {
-      this.$router.push("/abc");
+      this.$router.push('/abc')
     },
     toCityList() {
-      this.$router.push("/cityList");
+      this.$router.push('/cityList')
     },
     toJsInterview() {
-      this.$router.push("/jsInterview");
+      this.$router.push('/jsInterview')
     },
-  },
-};
+    toswiperView() {
+      this.$router.push('/swiperView')
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 #home {
   position: relative;
   height: 100%;
-  background: url("./image/001.jpg");
+  background: url('./image/001.jpg');
   h1 {
     width: 100%;
     position: absolute;
