@@ -21,7 +21,7 @@ Vue.use(LyTab)
 Vue.use(VueAwesomeSwiper /* { default options with global component } */)
 
 new Vue({
-  render: (h) => h(App),
+  render: h => h(App),
   router,
   store
 }).$mount('#app')

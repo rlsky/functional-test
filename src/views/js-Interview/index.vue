@@ -13,10 +13,25 @@
     >
       <i>&nbsp;{{ name }}&nbsp;</i>
     </span>
+    <div>{{ wocao | guolv }}</div>
+    <input type="text" @keyup.media-play-pause="method" />
+    <span
+      v-for="(value, index) in couponNameList2"
+      :key="'info' + index"
+      @click="toAdd"
+    >
+      {{ value }}
+    </span>
   </div>
 </template>
 <script>
+import Vue from 'vue'
 export default {
+  filters: {
+    guolv(item) {
+      return item + '1'
+    }
+  },
   name: 'jsInterview',
   data() {
     return {
@@ -25,12 +40,28 @@ export default {
       timeoutId: null,
       enterId: false,
       couponNameList: ['满100减10', '满200减20'],
-      commission: ''
+      couponNameList2: ['满100减10', '满200减20'],
+      commission: '',
+      wocao: 123
     }
   },
   created() {},
-  mounted() {},
+  mounted() {
+    // this.couponNameList2[2] = '满300减30'
+    // console.log(this.couponNameList2)
+    // this.$set(this.couponNameList2, 2, '满300减30')
+  },
   methods: {
+    toAdd() {
+      // this.couponNameList2[2] = '满300减30'
+      /**
+       * this.$set和vue.set没有区别,两个是一样的,只是将vue下的set功能移植到了vue的原型上,所以this.$set也可以使用
+       */
+      Vue.set(this.couponNameList2, 2, '满300减30')
+      this.$set(this.couponNameList2, 3, '满400减40')
+      // console.log(Vue)
+      console.log(this.couponNameList2)
+    },
     toclick() {
       setTimeout(() => {
         window.location.href = this.urlLink

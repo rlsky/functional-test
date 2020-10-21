@@ -5,27 +5,33 @@
   </div>
 </template>
 <script>
-import { Button } from "vant";
+import { Button } from 'vant'
+import { mapState } from 'vuex'
 
 export default {
-  name: "Vuex",
+  name: 'Vuex',
   components: {
-    [Button.name]: Button,
+    [Button.name]: Button
   },
   data() {
-    return {};
+    return {}
   },
-  created() {},
+  computed: {
+    ...mapState['count']
+  },
+  created() {
+    console.log(this.count)
+  },
   mounted() {
-    console.log(this.$store.state.count);
+    console.log(this.$store.state.count)
   },
   methods: {
     toCommit() {
-      this.$store.dispatch("increment");
-      console.log(this.$store.state.count);
-      sessionStorage.setItem("count", JSON.stringify(this.$store.state.count));
-    },
-  },
-};
+      this.$store.dispatch('increment')
+      console.log(this.$store.state.count)
+      sessionStorage.setItem('count', JSON.stringify(this.$store.state.count))
+    }
+  }
+}
 </script>
 <style></style>
