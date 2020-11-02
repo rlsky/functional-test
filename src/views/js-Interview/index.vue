@@ -61,6 +61,7 @@ export default {
   },
   created() {},
   mounted() {
+    console.log(this.couponNameList.join(''))
     // this.couponNameList2[2] = '满300减30'
     // console.log(this.couponNameList2)
     // this.$set(this.couponNameList2, 2, '满300减30')
