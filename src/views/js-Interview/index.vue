@@ -22,6 +22,20 @@
     >
       {{ value }}
     </span>
+    <div>
+      <div class="btn-One">
+        按钮111
+      </div>
+      <div
+        class="btn-Two"
+        @click="toTouchS(count)"
+        :ref="'btnTwo' + count"
+        v-for="count in 10"
+        :key="count"
+      >
+        按钮{{ count }}
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -52,6 +66,12 @@ export default {
     // this.$set(this.couponNameList2, 2, '满300减30')
   },
   methods: {
+    toTouchS() {
+      console.log(this.$refs)
+    },
+    // toTouchE() {
+    //   this.$refs.btnTwo.style.background = 'green'
+    // },
     toAdd() {
       // this.couponNameList2[2] = '满300减30'
       /**
@@ -114,5 +134,14 @@ export default {
   height: 400px;
   width: 100%;
   background: grey;
+}
+.btn-One {
+  background: red;
+  &:hover {
+    background: green;
+  }
+}
+.btn-Two {
+  height: 100px;
 }
 </style>
