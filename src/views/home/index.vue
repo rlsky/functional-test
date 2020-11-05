@@ -20,6 +20,7 @@
       <button @click="toCityList" title="cityList">cityList</button>
       <button @click="toJsInterview" title="cityList">jsInterview</button>
       <button @click="toswiperView" title="cityList">swiper-View</button>
+      <button @click="toface" title="cityList">face</button>
     </div>
   </div>
 </template>
@@ -72,6 +73,9 @@ export default {
     },
     toswiperView() {
       this.$router.push('/swiperView')
+    },
+    toface() {
+      this.$router.push('/face')
     }
   }
 }

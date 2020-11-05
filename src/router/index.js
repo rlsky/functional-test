@@ -15,6 +15,7 @@ import Abc from './moudle/abc'
 import cityList from './moudle/city-List'
 import jsInterview from './moudle/js-Interview'
 import swiperView from './moudle/swiperView'
+import face from './moudle/face'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -37,7 +38,8 @@ const router = new VueRouter({
     ...Abc,
     ...cityList,
     ...jsInterview,
-    ...swiperView
+    ...swiperView,
+    ...face
   ],
   history
 })
