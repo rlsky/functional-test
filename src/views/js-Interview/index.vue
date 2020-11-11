@@ -40,6 +40,7 @@
 </template>
 <script>
 import Vue from 'vue'
+import {showMsg} from 'npmbap'
 export default {
   filters: {
     guolv(item) {
@@ -59,7 +60,9 @@ export default {
       wocao: 123
     }
   },
-  created() {},
+  created() {
+    showMsg()
+  },
   mounted() {
     console.log(this.couponNameList.join(''))
     // this.couponNameList2[2] = '满300减30'

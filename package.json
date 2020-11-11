@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "lib-flexible": "^0.3.2",
     "ly-tab": "^2.1.2",
+    "npmbap": "^1.0.1",
     "postcss-px2rem": "^0.3.0",
     "qs": "^6.9.4",
     "swiper": "^4.5.1",
