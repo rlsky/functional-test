@@ -107,13 +107,13 @@ export default {
   },
   created() {},
   mounted() {
-    this.gettotal();
+    // this.gettotal();
   },
   methods: {
-    async gettotal() {
-      const result = await this.$http.index.getIndexData();
-      this.Total = result.data.data;
-    },
+    // async gettotal() {
+    //   const result = await this.$http.index.getIndexData();
+    //   this.Total = result.data.data;
+    // },
     scroll(scrollData) {
       let zongGaoDu = scrollData.scrollHeight + scrollData.scrollTop;
       this.flag++;

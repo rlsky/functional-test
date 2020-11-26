@@ -2,7 +2,7 @@ const Abc = () => import("views/abc/index.vue");
 
 export default [
   {
-    path: "/abc",
+    path: "/abc-*",
     name: "abc",
     component: Abc,
     meta: {

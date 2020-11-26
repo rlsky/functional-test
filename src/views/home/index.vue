@@ -30,7 +30,8 @@ export default {
     return {}
   },
   created() {},
-  mounted() {},
+  mounted() {
+  },
   methods: {
     toWaterfallFlow() {
       this.$router.push('/waterfallFlow')
@@ -48,7 +49,12 @@ export default {
       this.$router.push('/nextTick')
     },
     toLyTab() {
-      this.$router.push('/lyTab')
+      this.$router.push({
+        path:'/lyTab',
+        query:{
+          tiaojsIn:'ok'
+        }
+      })
     },
     toCanvasPage() {
       this.$router.push('/canvas-Page')
@@ -63,19 +69,19 @@ export default {
       this.$router.push('/loading')
     },
     toAbc() {
-      this.$router.push('/abc')
+      this.$router.push('/abc-')
     },
     toCityList() {
       this.$router.push('/cityList')
     },
     toJsInterview() {
-      this.$router.push('/jsInterview')
+      this.$router.push('/jsInterview?')
     },
     toswiperView() {
       this.$router.push('/swiperView')
     },
     toface() {
-      this.$router.push('/face')
+      this.$router.push('/face/123')
     }
   }
 }

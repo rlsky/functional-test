@@ -6,7 +6,7 @@ export default [
     name: "waterfallFlow",
     component: WaterfallFlow,
     meta: {
-      title: "WaterfallFlow",
+      title: "WaterfallFlow"
     },
   },
 ];
