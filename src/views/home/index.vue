@@ -18,9 +18,10 @@
       <button @click="toLoading" title="loading">loading</button>
       <button @click="toAbc" title="applyBindCall">applyBindCall</button>
       <button @click="toCityList" title="cityList">cityList</button>
-      <button @click="toJsInterview" title="cityList">jsInterview</button>
-      <button @click="toswiperView" title="cityList">swiper-View</button>
-      <button @click="toface" title="cityList">face</button>
+      <button @click="toJsInterview" title="jsInterview">jsInterview</button>
+      <button @click="toswiperView" title="swiperView">swiper-View</button>
+      <button @click="toface" title="face">face</button>
+      <button @click="toAxiosDemo" title="AxiosDemo">AxiosDemo</button>
     </div>
   </div>
 </template>
@@ -82,6 +83,9 @@ export default {
     },
     toface() {
       this.$router.push('/face/123')
+    },
+    toAxiosDemo() {
+      this.$router.push('/axiosdemo')
     }
   }
 }

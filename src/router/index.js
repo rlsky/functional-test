@@ -16,6 +16,8 @@ import cityList from './moudle/city-List'
 import jsInterview from './moudle/js-Interview'
 import swiperView from './moudle/swiperView'
 import face from './moudle/face'
+import axiosDemo from './moudle/axios-Demo'
+
 
 // 解决Vue-Router升级导致的Uncaught(in promise) navigation guard问题
 const originalPush = VueRouter.prototype.push
@@ -52,7 +54,8 @@ const router = new VueRouter({
     ...cityList,
     ...jsInterview,
     ...swiperView,
-    ...face
+    ...face,
+    ...axiosDemo
   ],
   mode:'history'
 })

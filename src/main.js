@@ -9,16 +9,18 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './vuex/index'
 import LyTab from 'ly-tab'
 import { Toast } from 'vant'
-import '../node_modules/swiper/dist/css/swiper.css'
+import Swiper2, { Navigation, Pagination, EffectFade, Autoplay ,} from 'swiper'
+import 'swiper/swiper-bundle.min.css' // 电影轮播效果组件库样式
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
-// Vue.prototype.$http = http;
-// Vue.config.silent = true;  取消所有的报错及日志
+
 Vue.use(waterfall)
 Vue.use(Toast)
 Vue.use(LyTab)
-Vue.use(VueAwesomeSwiper /* { default options with global component } */)
+Vue.use(VueAwesomeSwiper)
+
+Swiper2.use([Navigation, Pagination, EffectFade, Autoplay])
 
 new Vue({
   render: h => h(App),

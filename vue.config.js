@@ -13,20 +13,14 @@ module.exports = {
     // host: "192.168.43.30",
     open: true,
     proxy: {
-      "/3002": {
-        target: "http://localhost:3002",
+      '/api': {
+        target: 'http://www.example.org',
         changeOrigin: true,
+        ws: true,
         pathRewrite: {
-          "^/3002": "",
-        },
-      },
-      "/3003": {
-        target: "https://m.you.163.com/xhr/search/searchAutoComplete.json",
-        changeOrigin: true,
-        pathRewrite: {
-          "^/3003": "",
-        },
-      },
+          '^/api': ''
+        }
+      }
     },
     before(app) {
       app.get("/api/lists", (req, res) => {
