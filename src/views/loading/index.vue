@@ -6,22 +6,22 @@
   </div>
 </template>
 <script>
-import bouncingLoader from "../../components/bouncing-loader";
+import bouncingLoader from '../../components/bouncing-loader'
 
 export default {
-  name: "Loading",
+  name: 'Loading',
   components: { bouncingLoader },
   data() {
-    return {};
+    return {}
   },
   created() {},
   mounted() {},
   methods: {
-    toLogin(){
-      sessionStorage.setItem('token','fbksbflkdsnfjkbob1231241')
+    toLogin() {
+      sessionStorage.setItem('token', 'fbksbflkdsnfjkbob1231241')
       this.$router.replace(this.$route.query.redirect)
     }
-  },
-};
+  }
+}
 </script>
 <style lang="scss" scoped></style>

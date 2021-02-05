@@ -37,10 +37,10 @@
   </div>
 </template>
 <script>
-import goBack from "components/goback";
+import goBack from 'components/goback'
 
 export default {
-  name: "waterfall-Flow",
+  name: 'waterfall-Flow',
   components: { goBack },
   data() {
     return {
@@ -48,62 +48,62 @@ export default {
       data: [
         {
           img:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg",
-          title: "标题",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg',
+          title: '标题',
           avatar:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-          user: "华为荣耀x200",
-          liked: "",
-          height: "200px",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+          user: '华为荣耀x200',
+          liked: '',
+          height: '200px'
         },
         {
           img:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg",
-          title: "哦哦哦哦哦哦哦",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg',
+          title: '哦哦哦哦哦哦哦',
           avatar:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-          user: "鲨鱼小孩",
-          liked: "",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+          user: '鲨鱼小孩',
+          liked: ''
         },
         {
           img:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg",
-          title: "啥",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg',
+          title: '啥',
           avatar:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-          user: "华为荣耀x200",
-          liked: "",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+          user: '华为荣耀x200',
+          liked: ''
         },
         {
           img:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg",
-          title: "哦哦哦哦哦哦哦",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg',
+          title: '哦哦哦哦哦哦哦',
           avatar:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-          user: "鲨鱼小孩",
-          liked: "",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+          user: '鲨鱼小孩',
+          liked: ''
         },
         {
           img:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg",
-          title: "啥",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg',
+          title: '啥',
           avatar:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-          user: "华为荣耀x200",
-          liked: "",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+          user: '华为荣耀x200',
+          liked: ''
         },
         {
           img:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg",
-          title: "哦哦哦哦哦哦哦",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg',
+          title: '哦哦哦哦哦哦哦',
           avatar:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-          user: "鲨鱼小孩",
-          liked: "",
-        },
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+          user: '鲨鱼小孩',
+          liked: ''
+        }
       ],
-      col: 2,
-    };
+      col: 2
+    }
   },
   created() {},
   mounted() {
@@ -115,81 +115,81 @@ export default {
     //   this.Total = result.data.data;
     // },
     scroll(scrollData) {
-      let zongGaoDu = scrollData.scrollHeight + scrollData.scrollTop;
-      this.flag++;
+      let zongGaoDu = scrollData.scrollHeight + scrollData.scrollTop
+      this.flag++
       if (this.flag > 1) {
-        return;
+        return
       }
       if (this.$refs.wrap.clientHeight - 10 <= zongGaoDu) {
         this.data = this.data.concat([
           {
             img:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg",
-            title: "啥",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg',
+            title: '啥',
             avatar:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-            user: "华为荣耀x200",
-            liked: "",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+            user: '华为荣耀x200',
+            liked: ''
           },
           {
             img:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg",
-            title: "哦哦哦哦哦哦哦",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg',
+            title: '哦哦哦哦哦哦哦',
             avatar:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-            user: "鲨鱼小孩",
-            liked: "",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+            user: '鲨鱼小孩',
+            liked: ''
           },
           {
             img:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg",
-            title: "啥",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg',
+            title: '啥',
             avatar:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-            user: "华为荣耀x200",
-            liked: "",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+            user: '华为荣耀x200',
+            liked: ''
           },
           {
             img:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg",
-            title: "哦哦哦哦哦哦哦",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg',
+            title: '哦哦哦哦哦哦哦',
             avatar:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-            user: "鲨鱼小孩",
-            liked: "",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+            user: '鲨鱼小孩',
+            liked: ''
           },
           {
             img:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg",
-            title: "啥",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1841795178,886331890&fm=26&gp=0.jpg',
+            title: '啥',
             avatar:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-            user: "华为荣耀x200",
-            liked: "",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+            user: '华为荣耀x200',
+            liked: ''
           },
           {
             img:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg",
-            title: "哦哦哦哦哦哦哦",
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2329215547,2317247593&fm=26&gp=0.jpg',
+            title: '哦哦哦哦哦哦哦',
             avatar:
-              "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg",
-            user: "鲨鱼小孩",
-            liked: "",
-          },
-        ]);
+              'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1027245443,3552957153&fm=26&gp=0.jpg',
+            user: '鲨鱼小孩',
+            liked: ''
+          }
+        ])
       }
-      this.flag = 0;
-    },
+      this.flag = 0
+    }
   },
   computed: {
     itemWidth() {
-      return document.documentElement.clientWidth / 2 - 5;
+      return document.documentElement.clientWidth / 2 - 5
     },
     gutterWidth() {
-      return 10;
-    },
-  },
-};
+      return 10
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 .container-water-fall {

@@ -17,22 +17,13 @@ import jsInterview from './moudle/js-Interview'
 import swiperView from './moudle/swiperView'
 import face from './moudle/face'
 import axiosDemo from './moudle/axios-Demo'
-
-
-// 解决Vue-Router升级导致的Uncaught(in promise) navigation guard问题
-const originalPush = VueRouter.prototype.push
-VueRouter.prototype.push = function push (location, onResolve, onReject) {
-  if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
-  return originalPush.call(this, location).catch(err => err)
-}
-
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  scrollBehavior (to,from,savedPosition) {
-    console.log(from,savedPosition)
+  scrollBehavior(to, from, savedPosition) {
+    console.log(from, savedPosition)
     if (to.hash) {
-      console.log(to.hash,'to.hash')
+      console.log(to.hash, 'to.hash')
       return {
         selector: to.hash
       }
@@ -57,35 +48,44 @@ const router = new VueRouter({
     ...face,
     ...axiosDemo
   ],
-  mode:'history'
+  mode: 'history'
 })
 
 router.beforeEach((to, from, next) => {
-  console.log('路由全局to对象:',to)
-  if(to.matched.some(record => record.meta.requiresAuth)){
-    if(!sessionStorage.getItem('token')){
+  console.log('路由全局to对象:', to)
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    if (!sessionStorage.getItem('token')) {
       next({
-        path: '/loading', 
+        path: '/loading',
         query: { redirect: to.fullPath }
       })
-    }else{
+    } else {
       next()
     }
-  }else{
+  } else {
     next()
   }
-  console.log('全局前置守卫:'+'去哪里-->'+to.path,',来自哪里--->'+from.path)
-  
+  console.log(
+    '全局前置守卫:' + '去哪里-->' + to.path,
+    ',来自哪里--->' + from.path
+  )
+
   /* 路由发生变化修改页面title */
   if (to.meta.title) {
     document.title = to.meta.title
   }
 })
-router.beforeResolve((to, from, next)=>{
-  console.log('全局解析守卫:'+'去哪里-->'+to.path,',来自哪里--->'+from.path)
+router.beforeResolve((to, from, next) => {
+  console.log(
+    '全局解析守卫:' + '去哪里-->' + to.path,
+    ',来自哪里--->' + from.path
+  )
   next()
 })
-router.afterEach((to, from)=>{
-  console.log('全局后置守卫:'+'去哪里-->'+to.path,',来自哪里--->'+from.path)
+router.afterEach((to, from) => {
+  console.log(
+    '全局后置守卫:' + '去哪里-->' + to.path,
+    ',来自哪里--->' + from.path
+  )
 })
 export default router

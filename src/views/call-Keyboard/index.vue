@@ -16,23 +16,23 @@
 </template>
 <script>
 export default {
-  name: "callKeyboard",
+  name: 'callKeyboard',
   data() {
-    return {};
+    return {}
   },
   created() {},
   mounted() {},
   methods: {
     tofocus() {
-      this.$refs.wocaoRef.style.bottom = "0px";
-      this.$refs.wocaoRef.style.transition = "all 0.5s";
+      this.$refs.wocaoRef.style.bottom = '0px'
+      this.$refs.wocaoRef.style.transition = 'all 0.5s'
     },
     toblur() {
-      console.log("111");
-      this.$refs.wocaoRef.style.bottom = "-101px";
-    },
-  },
-};
+      console.log('111')
+      this.$refs.wocaoRef.style.bottom = '-101px'
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 input::-webkit-outer-spin-button,

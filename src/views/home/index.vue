@@ -31,8 +31,7 @@ export default {
     return {}
   },
   created() {},
-  mounted() {
-  },
+  mounted() {},
   methods: {
     toWaterfallFlow() {
       this.$router.push('/waterfallFlow')
@@ -51,9 +50,9 @@ export default {
     },
     toLyTab() {
       this.$router.push({
-        path:'/lyTab',
-        query:{
-          tiaojsIn:'ok'
+        path: '/lyTab',
+        query: {
+          tiaojsIn: 'ok'
         }
       })
     },

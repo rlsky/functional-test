@@ -1,12 +1,12 @@
-const Vant = () => import("views/vant/index.vue");
+const Vant = () => import('views/vant/index.vue')
 
 export default [
   {
-    path: "/vant",
-    name: "vant",
+    path: '/vant',
+    name: 'vant',
     component: Vant,
     meta: {
-      title: "Vant",
-    },
-  },
-];
+      title: 'Vant'
+    }
+  }
+]

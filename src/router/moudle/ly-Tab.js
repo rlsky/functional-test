@@ -1,12 +1,12 @@
-const lyTab = () => import("views/ly-Tab/index.vue");
+const lyTab = () => import('views/ly-Tab/index.vue')
 
 export default [
   {
-    path: "/lyTab",
-    name: "lyTab",
+    path: '/lyTab',
+    name: 'lyTab',
     component: lyTab,
     meta: {
-      title: "lyTab",
-    },
-  },
-];
+      title: 'lyTab'
+    }
+  }
+]

@@ -55,53 +55,53 @@
 </template>
 <script>
 export default {
-  name: "cityList",
+  name: 'cityList',
   data() {
     return {
-      hotCity: "", // 热门城市
-      hotCities: [], //热门城市列表
+      hotCity: '', // 热门城市
+      hotCities: [], // 热门城市列表
       cityList: [], // 城市列表
       options: {
         enableHighAccuracy: true, // 是否使用高精度定位
-        timeout: 5000, //它代表机器能够等待方法返回位置的最长时间（单位是毫秒）
+        timeout: 5000, // 它代表机器能够等待方法返回位置的最长时间（单位是毫秒）
         // 单位为毫秒，用来告诉浏览器是否使用最近缓存的位置数据，如果在maximumAge内有一个请求，将会返回它，而不请求新位置。
         // maximumAge如果为Infinity，则总是使用一个缓存的位置，如果为0则必须在每次请求时查找一个新位置(默认值为0)
-        maximumAge: 0,
+        maximumAge: 0
       },
       isTop: false, // 是否展现指定按钮
-      bTop: "", // 元素B的位置
-    };
+      bTop: '' // 元素B的位置
+    }
   },
   created() {
-    this.getCityInfo(); // 获取城市内容
-    this.getLocation(); // 获取定位
+    this.getCityInfo() // 获取城市内容
+    this.getLocation() // 获取定位
   },
   mounted() {
-    window.addEventListener("scroll", this.scrollToTop);
+    window.addEventListener('scroll', this.scrollToTop)
     this.$nextTick(() => {
       setTimeout(() => {
-        this.getBTop();
-      }, 200);
-    });
+        this.getBTop()
+      }, 200)
+    })
   },
   methods: {
-    //获取B的位置
+    // 获取B的位置
     getBTop() {
-      this.bTop = this.$refs.B[0].offsetTop;
+      this.bTop = this.$refs.B[0].offsetTop
     },
-    //请求城市数据
+    // 请求城市数据
     async getCityInfo() {
-      const res = await this.$http.get("http://localhost:3001/api/lists");
-      const { city, recommend } = res.data;
-      this.hotCities = recommend[0].lists;
-      this.cityList = city;
-      this.hotCity = recommend[0].title;
+      const res = await this.$http.get('http://localhost:3001/api/lists')
+      const { city, recommend } = res.data
+      this.hotCities = recommend[0].lists
+      this.cityList = city
+      this.hotCity = recommend[0].title
     },
     // 点击字母跳对应位置
     toClickCity(e) {
-      const clickLetter = "#link" + e.target.innerText;
-      const anchor = this.$el.querySelector(clickLetter);
-      scrollTo(0, anchor.offsetTop);
+      const clickLetter = '#link' + e.target.innerText
+      const anchor = this.$el.querySelector(clickLetter)
+      scrollTo(0, anchor.offsetTop)
     },
     // 实现定位,目前无法定位原因是协议不是https,而是http
     getLocation() {
@@ -109,28 +109,28 @@ export default {
         this.success,
         this.error,
         this.options
-      );
+      )
     },
     success(pos) {
-      console.log(pos);
+      console.log(pos)
     },
     error(err) {
-      console.log(err);
+      console.log(err)
     },
     // 是否显示置顶按钮
     scrollToTop() {
       if (document.documentElement.scrollTop > this.bTop) {
-        this.isTop = true;
+        this.isTop = true
       } else {
-        this.isTop = false;
+        this.isTop = false
       }
     },
     // 点击置顶
     toPageTop() {
-      scrollTo(0, 0);
-    },
-  },
-};
+      scrollTo(0, 0)
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 #city-List {
@@ -155,7 +155,7 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
         &::after {
-          content: "";
+          content: '';
           width: 96px;
         }
         .hot-Item {

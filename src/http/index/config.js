@@ -1,9 +1,9 @@
 export default {
   api: {
     getindexCateModule: {
-      url: "/indexCateModule",
-      method: "get",
-      crosUrl: "/3002",
-    },
-  },
-};
+      url: '/indexCateModule',
+      method: 'get',
+      crosUrl: '/3002'
+    }
+  }
+}

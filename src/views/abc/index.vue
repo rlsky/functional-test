@@ -35,14 +35,14 @@
 </template>
 <script>
 export default {
-  name: "Abc",
+  name: 'Abc',
   data() {
-    return {};
+    return {}
   },
   created() {},
   mounted() {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 <style lang="scss" scoped>
 #abc {

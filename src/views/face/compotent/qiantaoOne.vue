@@ -1,25 +1,19 @@
 <template>
-<div>
-  我是嵌套1,id:{{id}}
-</div>
-
+  <div>我是嵌套1,id:{{ id }}</div>
 </template>
 <script>
 export default {
   data() {
-    return {
+    return {}
+  },
+  props: {
+    id: {
+      type: String
     }
   },
-  props:{
-    id:{
-      type:String
-    }
-  },
-  created() {
-  },
+  created() {},
   mounted() {},
-  methods: {
-  }
+  methods: {}
 }
 </script>
 <style scoped></style>

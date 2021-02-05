@@ -29,18 +29,18 @@
 <script>
 export default {
   mounted() {
-    this.isFirstIn();
+    this.isFirstIn()
   },
   props: {
-    jsItems: Array,
+    jsItems: Array
   },
   methods: {
     // 首次进入页面,tabline的位置定位
     isFirstIn() {
-      this.$refs.tabLine.style.width = `22.8px`;
-      let FirstTargetW = this.$refs.tabItem[0].offsetWidth / 2;
-      let X = FirstTargetW - 11 + "px";
-      this.$refs.tabLine.style.transform = `translateX( ${X} )`;
+      this.$refs.tabLine.style.width = `22.8px`
+      let FirstTargetW = this.$refs.tabItem[0].offsetWidth / 2
+      let X = FirstTargetW - 11 + 'px'
+      this.$refs.tabLine.style.transform = `translateX( ${X} )`
     },
     // selectChange() {
     //   console.log(this.selectedId);
@@ -54,8 +54,8 @@ export default {
       ) {
         this.$refs.tabList.scrollTo({
           left: e.target.offsetLeft - 160,
-          behavior: "smooth",
-        });
+          behavior: 'smooth'
+        })
       } else {
         // 点击右侧时
         if (
@@ -64,18 +64,18 @@ export default {
         ) {
           this.$refs.tabList.scrollTo({
             left: e.target.offsetLeft - 155,
-            behavior: "smooth",
-          });
+            behavior: 'smooth'
+          })
         }
       }
-      this.RelativeParentLeft = e.target.offsetLeft;
+      this.RelativeParentLeft = e.target.offsetLeft
 
-      this.isActive = id;
-      let targetW = e.target.offsetWidth / 2;
-      let LineW = this.$refs.tabLine.offsetWidth / 2;
-      let X = this.RelativeParentLeft + targetW - LineW + "px";
-      this.$refs.tabLine.style.transform = `translateX( ${X} )`;
-    },
+      this.isActive = id
+      let targetW = e.target.offsetWidth / 2
+      let LineW = this.$refs.tabLine.offsetWidth / 2
+      let X = this.RelativeParentLeft + targetW - LineW + 'px'
+      this.$refs.tabLine.style.transform = `translateX( ${X} )`
+    }
   },
   // ly-tab插件git地址 https://github.com/ScoutYin/ly-tab
   data() {
@@ -84,22 +84,22 @@ export default {
       isActive: 0,
       selectedId: 0,
       items: [
-        { label: "首页" },
-        { label: "推荐" },
-        { label: "Android" },
-        { label: "前端" },
-        { label: "后端" },
-        { label: "iOS" },
-        { label: "产品" },
-        { label: "人工智能" },
-        { label: "设计" },
+        { label: '首页' },
+        { label: '推荐' },
+        { label: 'Android' },
+        { label: '前端' },
+        { label: '后端' },
+        { label: 'iOS' },
+        { label: '产品' },
+        { label: '人工智能' },
+        { label: '设计' }
       ],
       options: {
-        activeColor: "#1d98bd",
-      },
-    };
-  },
-};
+        activeColor: '#1d98bd'
+      }
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 #ly-tab-wrap {

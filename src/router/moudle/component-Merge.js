@@ -1,12 +1,12 @@
-const componentMerge = () => import("views/component-Merge/index.vue");
+const componentMerge = () => import('views/component-Merge/index.vue')
 
 export default [
   {
-    path: "/componentMerge",
-    name: "componentMerge",
+    path: '/componentMerge',
+    name: 'componentMerge',
     component: componentMerge,
     meta: {
-      title: "组件合并",
-    },
-  },
-];
+      title: '组件合并'
+    }
+  }
+]

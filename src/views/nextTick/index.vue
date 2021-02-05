@@ -40,7 +40,7 @@ export default {
       // 4.DOM 还没有更新就把dom上得内容给了msg3
       this.msg3 = this.$refs.msgDiv.innerHTML
 
-      //5.总结:this.$nextTick是在下次 DOM 更新结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。
+      // 5.总结:this.$nextTick是在下次 DOM 更新结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。
       //      其实就是获取视图更新之后的DOM节点
       // 一、在created生命周期中进行DOM操作
       // 在mounted生命周期才完成渲染挂载，所以在created生命周期是访问不到DOM节点的，如果要在created生命周期操作DOM要在this.$nextTick的回调函数中执行。

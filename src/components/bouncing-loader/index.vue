@@ -7,14 +7,14 @@
 </template>
 <script>
 export default {
-  name: "bouncingLoader",
+  name: 'bouncingLoader',
   data() {
-    return {};
+    return {}
   },
   created() {},
   mounted() {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 <style lang="scss" scoped>
 #bouncing-loader {

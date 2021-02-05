@@ -1,12 +1,12 @@
-const Vuex = () => import("views/vuex/index.vue");
+const Vuex = () => import('views/vuex/index.vue')
 
 export default [
   {
-    path: "/vuex",
-    name: "Vuex",
+    path: '/vuex',
+    name: 'Vuex',
     component: Vuex,
     meta: {
-      title: "Vuex",
-    },
-  },
-];
+      title: 'Vuex'
+    }
+  }
+]

@@ -1,12 +1,12 @@
-const NextTick = () => import("views/nextTick/index.vue");
+const NextTick = () => import('views/nextTick/index.vue')
 
 export default [
   {
-    path: "/nextTick",
-    name: "nextTick",
+    path: '/nextTick',
+    name: 'nextTick',
     component: NextTick,
     meta: {
-      title: "NextTick",
-    },
-  },
-];
+      title: 'NextTick'
+    }
+  }
+]

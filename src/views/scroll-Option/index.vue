@@ -25,180 +25,180 @@
 </template>
 <script>
 export default {
-  name: "scrollOption",
+  name: 'scrollOption',
   data() {
     return {
       isShowLine: false,
       classifyList: [
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
         },
         {
           imgUrl:
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg",
-          txt: "嘎嘎",
-        },
-      ],
-    };
+            'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2254336683,41826619&fm=26&gp=0.jpg',
+          txt: '嘎嘎'
+        }
+      ]
+    }
   },
   created() {},
   mounted() {
     // 判断是否需要下面的线
-    this.isShowLine1();
+    this.isShowLine1()
   },
   methods: {
     isShowLine1() {
       if (this.classifyList.length > 12) {
-        this.isShowLine = true;
+        this.isShowLine = true
       }
     },
     scrollEvent(e) {
       // 求面可滚动的总宽度
       let scrollWidth =
-        e.target.scrollWidth - this.$refs.classifyWrap.offsetWidth;
+        e.target.scrollWidth - this.$refs.classifyWrap.offsetWidth
       // 求线可滚动的总宽度
       let differenceLine =
-        this.$refs.lineWrap.offsetWidth - this.$refs.line.offsetWidth;
+        this.$refs.lineWrap.offsetWidth - this.$refs.line.offsetWidth
       // 线应移动的距离/线可滚动的总距离=面移动的距离/面可滚动的总距离
-      let left = (e.target.scrollLeft / scrollWidth) * differenceLine + "px";
+      let left = (e.target.scrollLeft / scrollWidth) * differenceLine + 'px'
       this.$nextTick(() => {
-        this.$refs.line.style.left = left;
-      });
-    },
-  },
-};
+        this.$refs.line.style.left = left
+      })
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 #scroll-Option {
