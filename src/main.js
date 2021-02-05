@@ -186,7 +186,7 @@ Vue.use(LyTab)
 Vue.use(VueAwesomeSwiper)
 
 Swiper2.use([Navigation, Pagination, EffectFade, Autoplay])
-
+/* eslint-disable no-new */
 new Vue({
   render: h => h(App),
   router,

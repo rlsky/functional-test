@@ -1,6 +1,6 @@
 export default (axios, config = {}) => {
   if (!config.api) throw new Error("api配置必须存在");
-  if (!config.api instanceof Object) throw new Error("api必须得是一个对象");
+  if (!(config.api instanceof Object)) throw new Error("api必须得是一个对象");
 
   const httpUtil = {};
   const api = config.api;
