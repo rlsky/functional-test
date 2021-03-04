@@ -12,7 +12,7 @@ export default (axios, config = {}) => {
       api[name].AfterReq = hooks.AfterReq
     }
 
-    httpUtil[name] = async (data = {}) => {
+    httpUtil[name] = (data = {}) => {
       if (!(data instanceof Object)) {
         throw new Error('请求数据必须是一个对象')
       }
