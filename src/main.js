@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue, { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
@@ -180,7 +180,6 @@ Vue.prototype.$notify = Notification
 Vue.prototype.$message = Message
 
 Vue.prototype.$http = axios
-Vue.config.productionTip = false
 
 Vue.use(waterfall)
 Vue.use(Toast)
@@ -189,8 +188,7 @@ Vue.use(VueAwesomeSwiper)
 
 Swiper2.use([Navigation, Pagination, EffectFade, Autoplay])
 /* eslint-disable no-new */
-new Vue({
-  render: h => h(App),
-  router,
-  store
-}).$mount('#app')
+createApp(App)
+  .use(router)
+  .use(store)
+  .mount('#app')

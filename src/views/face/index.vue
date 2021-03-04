@@ -46,7 +46,7 @@ export default {
     // console.log(this.)
     this.mySetInterVal(this.fn, this.a, this.b)
   },
-  destroyed() {
+  unmounted() {
     clearInterval(this.setFlag)
   },
   beforeRouteEnter(to, from, next) {
