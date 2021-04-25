@@ -20,4 +20,5 @@ contact.interceptors.response.use(
     return Promise.reject(error)
   }
 )
+// 试试
 export default contact
